@@ -1,0 +1,46 @@
+﻿@model MiniHubble.Models.Home.ServiceStatusModel
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section AddToHead {
+    <meta http-equiv="refresh" content="50">
+}
+
+<div class="row">
+    <div class="col-md-5 col-md-offset-3">
+
+        <table class="table table-condensed">
+            <tr>
+                <th>Name</th>
+                <th>Status</th>
+                <th>Last contact</th>
+            </tr>
+
+            @foreach (var r in Model.payload)
+            {
+                <tr>
+                    <td>@r.Name</td>
+                    <td><span class="@r.Status.ToLower()">@r.Status</span></td>
+                    <td><span class="last-seen">@r.LastSeen</span></td>
+                </tr>
+            }
+        </table>
+    </div>
+</div>
+
+<script type="text/javascript">
+    $(function () {
+        setInterval(updateCounters, 1000);
+    })
+
+    function updateCounters() {
+        $.each($(".last-seen"), function (k, v) {
+            var val = parseInt($(v).text());
+            console.log(val);
+            $(v).text(val + 1);
+        });
+    }
+</script>

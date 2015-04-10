@@ -1,0 +1,18 @@
+﻿[{
+    "id": "google",
+    "type": "web",
+    "name": "Google homepage",
+    "alert": 100,
+    "url": "http://google.com"
+},{
+    "id": "console1",
+    "type": "daemon",
+    "name": "Console app 1",
+    "alert":  100
+},{
+    "id": "healthunlocked",
+    "type": "web",
+    "name": "Healthunlocked Website",
+    "alert": 100,
+    "url": "https://healthunlocked.com"
+}]

@@ -1,0 +1,21 @@
+﻿body {
+    color: #f3f3f3;
+    background-color: #333;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    margin-bottom: 50px;
+}
+
+.title {
+    text-align: center;
+}
+
+.ok {
+    color: #0fc296;
+}
+
+.alarm {
+    color: #ff6a00;
+}
