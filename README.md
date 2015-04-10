@@ -1,5 +1,7 @@
 # KOMODO
 
+![](MiniHubble/Content/komodo.png)
+
 Simple monitoring services.  
 Can monitor http and daemon services.  
 Result of a simple code golf.
@@ -61,10 +63,11 @@ Configuration file is located at `/Content/config.json` ([here](MiniHubble/Conte
 	    "url": "https://healthunlocked.com"
 	}
 
+
 and it should be picked up on next restart  
 
 
-*Ping mechanism*
+### Ping mechanism
 
 So how does the regular pings work? 
 For all the `type:web` services, Komodo pings them at regular intervals and looks for `status:200` from the header.  
