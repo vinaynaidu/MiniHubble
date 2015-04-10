@@ -1,5 +1,7 @@
 # KOMODO
 
+![](MiniHubble/Content/komodo.png)
+
 Simple monitoring services.  
 Can monitor http and daemon services.  
 Result of a simple code golf.
