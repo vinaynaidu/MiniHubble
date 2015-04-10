@@ -42,9 +42,9 @@ Sample response:
 
 **2. Update service endpoint**
 
-*url:* /home/status?id={id}`  
-*method:* `PUT`  
-*note:* `id is required; type: string`
+*url:* `/home/status?id={id}`    
+*method:* `PUT`    
+*note:* `id is required; type: string`  
 
 Updates the `last_contact` of the service given by `string` `id`
 
